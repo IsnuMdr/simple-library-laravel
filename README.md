@@ -1,3 +1,50 @@
+# Aplikasi Perpustakaan Sederhana Menggunakan Laravel 8
+
+Web Perpustakaan Open Source yang dibuat oleh <a href="https://github.com/IsnuMdr"> Muhammad Isnu Munandar. </a> **Perpustakaan adalah website peminjaman dan pengembalian buku di perpustakaan.** Perpustakaan dibuat untuk memudahkan proses peminjaman dan pengembalian buku dengan mudah.
+
+## Screenshoot
+![Screenshot 2022-01-12 115841](https://user-images.githubusercontent.com/20652209/149066586-94492417-a70d-41c6-a9ff-5c6e2db1192c.jpg)
+![Screenshot 2022-01-12 120002](https://user-images.githubusercontent.com/20652209/149066769-db213087-91a0-4974-925c-57a56bb14bf2.jpg)
+![Screenshot 2022-01-12 120042](https://user-images.githubusercontent.com/20652209/149066733-299c9bcd-c7a6-4037-84f7-f19c7679684b.jpg)
+
+
+## 💻 Install
+
+1. **Clone Repository**
+```bash
+git clone https://github.com/IsnuMdr/simple-library-laravel.git
+cd perpustakaan
+composer install
+copy .env.example .env
+```
+
+2. **Buka ```.env``` lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai**
+```
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=db_perpustakaan
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+3. **Instalasi website**
+```bash
+php artisan migrate:fresh --seed
+```
+
+4. **Jalankan website**
+```command
+php artisan serve
+```
+
+## 🧑 Author
+
+- Facebook : <a href="https://www.facebook.com/isnu.mdr/"> Isnu Munandar</a>
+- LinkedIn : <a href="https://id.linkedin.com/in/muhammad-isnu-munandar-b256961b3"> Muhammad Isnu Munandar</a>
+
+<hr>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
