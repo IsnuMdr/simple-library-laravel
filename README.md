@@ -20,12 +20,24 @@ copy .env.example .env
 
 2. **Buka ```.env``` lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai**
 ```
-DB_CONNECTION=pgsql
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
-DB_PORT=5432
+DB_PORT=3306
 DB_DATABASE=db_perpustakaan
 DB_USERNAME=root
 DB_PASSWORD=
+```
+
+**Lalu ubah berikut sesuai dengan konfigurasi SMTP kalian**
+```
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=22b08358590e67
+MAIL_PASSWORD=2665e720f3ccb0
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=uas_login@laravel.com
+MAIL_FROM_NAME="${APP_NAME}"
 ```
 
 3. **Instalasi website**
