@@ -30,7 +30,9 @@ DB_PASSWORD=
 
 3. **Instalasi website**
 ```bash
+php artisan key:generate
 php artisan migrate:fresh --seed
+php artisan storage:link
 ```
 
 4. **Jalankan website**
