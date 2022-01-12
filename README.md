@@ -13,7 +13,7 @@ Web Perpustakaan Open Source yang dibuat oleh <a href="https://github.com/IsnuMd
 1. **Clone Repository**
 ```bash
 git clone https://github.com/IsnuMdr/simple-library-laravel.git
-cd perpustakaan
+cd simple-library-laravel
 composer install
 copy .env.example .env
 ```
